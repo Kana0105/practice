@@ -1,0 +1,594 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+
+
+/* external css: flickity.css */
+* { box-sizing: border-box; }
+body { font-family: sans-serif; }
+.carousel {
+  background: #EEE;
+}
+.carousel-cell {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+
+.top{
+  width:100%;
+  height: 100%;
+  position:relative;
+  background: url(../images/ideas.jpg) no-repeat top center;
+  background-size: cover;
+  padding:0px;
+  z-index: 0;
+}
+.top-s{
+  padding: 300px 0px 300px;
+}
+.top-s p{
+  font-size: 100px;
+  color: white;
+}
+
+/* Counter */
+.counter-c {
+  width:100%;
+  height: 200px;
+  background: url(../images/counter.JPG) no-repeat top center; 
+  background-size: cover;
+  padding:0px;
+  z-index: 0;
+  font-size: 30px;
+  color: white;
+}
+.counter-cc{
+  padding-top: 100px;
+}
+
+
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/* Navigation */
+#navigation{
+    position:absolute;
+　　height:80px;
+　　z-index:1;
+　　width: 100%;
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+content: "\f0c9";
+}
+
+
+
+/*------------------------Section------------------------*/
+.section-title{
+  padding-top: 50px;
+  font-size: 30px;
+}
+.rgba{
+	height:100%;
+	background-color: rgba(255,255,255,0.2);
+}
+
+
+
+
+/* Information */
+  .information{
+    padding: 50px;
+  }
+  #information h2 {
+    padding:3px;
+    margin-top: 40px;
+  }
+  #information ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  #information li {
+    padding:30px 5px 30px 12em;
+    text-indent: -7em;
+    border-bottom:1px solid #ddd;
+    font-size: 16px;
+  }
+  #information li span {
+    display:inline-block;
+    width:7em;
+    text-indent:0;
+  }
+  #information li a {
+    text-decoration:none;
+    color:#000;
+  }
+  #information li a:hover {
+    text-decoration:underline;
+    color:#AB0404;
+
+  }
+/* End information */
+
+
+/* About */
+  .about {
+    font-family: 'Signika Negative', sans-serif;
+    width:100%;
+    height: 100%;
+    position:relative;
+    /* background: url(../images/ideas.jpg) no-repeat top center; */
+    background-size: cover;
+    padding:0px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  /* .about:before{
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;/*重なり順序を一番下にしておく
+  } */
+  .ideas-e{
+    margin-top: 200px;
+    font-size: 55px;
+    /* color: black; */
+  }
+  /* .ideas-j{
+    padding-top: 10px;
+    font-size: 30px;
+    color: black;
+  } */
+  .ideas-words{
+    padding-top: 100px;
+    /* color: black; */
+    font-size: 14px;
+    margin-bottom: 3em;
+  }
+  .ideas-photo img{
+    padding-top:200px;
+    margin:auto;
+  }
+/* End About */
+
+/* Theme */
+  .theme {
+    font-family: 'Signika Negative', sans-serif;
+    height: 100% !important;
+    position:relative;
+    background: url(../images/step.JPG) no-repeat top center;
+    background-size: cover;
+    padding:0px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  /* .theme:before{
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;/*重なり順序を一番下にしておく
+  } */
+  .theme-2018{
+    padding-top: 12em;
+    font-size: 20px;
+    color: white;
+  }
+  .theme-step{
+    font-size: 70px;
+    color: white;
+  }
+  .theme-words{
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 2em;
+    color: white;
+  }
+
+
+/* End Theme */
+
+/* Partner */
+  .partner {
+    font-family: 'Signika Negative', sans-serif;
+    width:100%;
+    height: 100%;
+    position:relative;
+    background-size: cover;
+    padding:0px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .partner:before{
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;/*重なり順序を一番下にしておく*/
+  }
+  .partner-p{
+    margin-top: 2em;
+    font-size: 70px;
+    /* color: black; */
+  }
+  /* .ideas-j{
+    padding-top: 10px;
+    font-size: 30px;
+    color: black;
+  } */
+  .partner-words{
+    margin-top: 100px;
+    /* color: black; */
+    font-size: 18px;
+    margin-bottom: 3em;
+  }
+  .partner-photo img{
+    padding-top:200px;
+    margin:auto;
+  }
+  .p-btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 10px 30px 30px;
+    text-decoration: none;
+    color: #a7bdca;
+    border: solid 2px #a7bdca;
+    border-radius: 3px;
+    transition: .4s;
+    font-size:30px;
+  
+  }
+  .p-btn:hover {
+    background: #a7bdca;
+    color: white;
+  }
+/* End Partner */
+
+/* Speaker */
+  .speaker {
+    font-family: 'Signika Negative', sans-serif;
+    width:100%;
+    height: 100%;
+    position:relative;
+    background: url(../images/ideas.jpg) no-repeat top center;
+    background-size: cover;
+    padding:0px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  /* .speaker:before{
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;/*重なり順序を一番下にしておく
+  } */
+  .speaker-s{
+    font-size: 70px;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .speaker-words{
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: white;
+
+  }
+  
+
+
+/* End Speaker */
+
+/* Membear */
+  .member {
+    font-family: 'Signika Negative', sans-serif;
+    width:100%;
+    height: 100%;
+    position:relative;
+    background-size: cover;
+    padding:0px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .member-m{
+    margin-top: 2em;
+    font-size: 70px;
+  }
+  .member-words{
+    margin-top: 100px;
+    /* color: black; */
+    font-size: 18px;
+    margin-bottom: 3em;
+  }
+  .member-photo img{
+    /* padding-top:200px; */
+    margin:auto;
+  }
+  .kido{
+    position:absolute; 
+    top:100px; 
+    left:120px; 
+    z-index: 3;
+  }
+  .kana{
+    position:absolute;
+    top:300px;
+    left:250px; 
+    z-index: 2;
+  }
+  .forest{
+    position:absolute;
+    top:400px;
+    left:60px; 
+    z-index: 1;
+  }
+  .m-btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 10px 30px 30px;
+    text-decoration: none;
+    color: #a7bdca;
+    border: solid 2px #a7bdca;
+    border-radius: 3px;
+    transition: .4s;
+    font-size:30px;
+
+  }
+  .m-btn:hover {
+    background: #a7bdca;
+    color: white;
+}
+/* End Member */
+
+/* Blog */
+.blog {
+  font-family: 'Signika Negative', sans-serif;
+  width:100%;
+  height: 100%;
+  position:relative;
+  background: url(../images/photo.JPG) no-repeat top center;
+  background-size: cover;
+  padding:0px;
+  overflow: hidden;
+  z-index: 0;
+}
+.blog-b{
+  font-size: 70px;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.blog-words{
+  margin-top: 0px;
+  font-size: 18px;
+  margin-bottom: 150px;
+  color: white;
+}
+.b-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 10px 30px 30px;
+  text-decoration: none;
+  color: #a7bdca;
+  border: solid 2px #a7bdca;
+  border-radius: 3px;
+  transition: .4s;
+  font-size:30px;
+
+}
+.b-btn:hover {
+  background: #a7bdca;
+  color: white;
+}
+
+
+/* End Speaker */
+
+/* Contact */
+  .contact{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px 50px;
+  }
+/* /Contact */
+
+
+
+/*--------------------------------- footer --------------------------------*/
+  footer{
+    height:230px;
+    text-align:center;
+    font-size:20px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color: black;
+    background-size: cover; 
+    color: aliceblue;
+  }
+.share{
+  
+}
+.share ul{
+  padding: 20px 0 10px;
+}
+.share li{
+  display: inline-block;
+  font-size: 50px;
+  padding: 8px;    
+}
+.white{
+  color: aliceblue;
+}
+/*--------------------------------- contents -------------------------------*/
+.rgba_contents{
+	height:100%;
+  background-color: rgba(255,255,255,.50);
+}
+.section-title-contents {
+	padding-top: 150px;
+}
+
+
+/*--------------------------------- Coming Soon ---------------------------------*/
+.counter-soon {
+  width:100%;
+  height: 150px;
+  padding:50px 200px 300px;
+  font-size: 30px;
+}
+.coming-soon{
+  background: url(../images/step.JPG) no-repeat top center;
+  background-size: cover;
+  color: #000;
+  height: 100%;
+}
+.rgba-coming-soon{
+  height:100%;
+	background-color: rgba(255,255,255,0.7);
+}
+
+
+
+/*--------------------------------- about page --------------------------------- */
+.about_header {
+	width:100%;
+	position:relative;
+	background: url(../images/ideas-photo.jpg) no-repeat top center;
+	background-size: cover;
+	margin:0px;
+	overflow: hidden;
+	z-index: 0;
+}
+.ted{
+  padding: 20px;
+  font-size: 15px;
+}
+.tedx{
+  padding: 20px;
+  font-size: 15px;
+}
+.red{
+  color: #e62b1e;
+}
+
+/*-------------------------------- speaker page ---------------------------------*/
+.speaker_header {
+	width:100%;
+	position:relative;
+	background: url(../images/ideas-page.jpg) no-repeat top center;
+	background-size: cover;
+	padding:0px;
+	overflow: hidden;
+	z-index: 0;
+}
+.s-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 10px 30px 30px;
+  text-decoration: none;
+  color: #a7bdca;
+  border: solid 2px #a7bdca;
+  border-radius: 3px;
+  transition: .4s;
+  font-size:30px;
+
+}
+.s-btn:hover {
+  background: #a7bdca;
+  color: white;
+}
+.sp h3{
+  padding: 30px 0 30px;
+}
+
+
+
+/*-------------------------------- partner page ---------------------------------*/
+.partner_header {
+	width:100%;
+	position:relative;
+	/* background: url(../images/partner.jpg) no-repeat top center; */
+	background-size: cover;
+	padding:0px
+	overflow: hidden;
+	z-index: 0;
+}
+
+/*-------------------------------- member page ---------------------------------*/
+.member-d img{
+  width: 160px;
+  height: 200px;
+  margin:20px;
+  opacity: 0.7;
+}
+.member-d img:hover{
+  opacity: 1;
+}
+.member-title{
+  font-size:30px;
+  border-bottom: 3px solid rgb(182, 182, 182);
+  padding: 50px 0 0;
+}
+
+
